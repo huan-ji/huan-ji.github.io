@@ -18,6 +18,57 @@
 		vertical-align: baseline;
 	}
 
+	.project {
+		position: relative;
+	}
+
+	.project:hover img {
+		opacity: 0.6;
+		/*border: 1px solid grey;*/
+		transition: opacity 0.3s;
+	}
+
+	.project:hover .project-links {
+		display: inline-block;
+	}
+
+	.project-links {
+		position: absolute;
+		margin: auto;
+		display: none;
+		top: 45%;
+		opacity: 1;
+		font-size: 16pt;
+		color: black;
+		border: 3px solid grey;
+		border-radius: 10px;
+		background-color: lightgrey;
+
+	}
+
+	.project-links > a {
+		padding: 5px;
+		padding-left: 15px;
+		padding-right: 15px;
+
+	}
+
+	.link-one {
+		left: 15%;
+	}
+
+	.link-two {
+		right: 27%;
+	}
+
+	.link-three {
+		left: 30%;
+	}
+
+	.project-links a {
+		display: inline-block;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
